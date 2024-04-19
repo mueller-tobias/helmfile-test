@@ -10,7 +10,7 @@ repositories:
 releases:
   - name: nginx
     labels:
-      job: dbmigrator
+      job: {{ .Values.nginx.service.type}}
     chart: bitnami/nginx
     values:
       - nginx.yaml.gotmpl
