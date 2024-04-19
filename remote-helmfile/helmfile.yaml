@@ -1,13 +1,7 @@
-# Dummy Helmfile that shoud represent the openDesk the Deployment
-repositories:
-  - name: bitnami
-    url: https://charts.bitnami.com/bitnami
+helmfiles:
+- path: "app/nginx/helmfile.yaml"
 
-releases:
-  - name: nginx
-    labels:
-      job: dbmigrator
-    chart: bitnami/nginx
-    # DB host, port, and connection opts for the environment
+environments:
+  default:
     values:
-    - "/remote-helmfile/deploy/environments/dev/values.yaml"
+      - "environments/default/*.yaml"
