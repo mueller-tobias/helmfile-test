@@ -14,5 +14,5 @@ releases:
     chart: bitnami/nginx
     values:
       - nginx.yaml.gotmpl
-      - {{ toYaml .Values | nindent 6 }}
+      - {{ toYaml .Values | nindent 8 }}
     # DB host, port, and connection opts for the environment
