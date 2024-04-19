@@ -1,5 +1,7 @@
 helmfiles:
 - path: helmfile/apps/nginx/helmfile.yaml
+  values:
+  - {{ toYaml .Values | nindent 6 }}
 
 environments:
   default:
