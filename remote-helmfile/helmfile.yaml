@@ -1,7 +1,7 @@
 helmfiles:
-- path: "app/nginx/helmfile.yaml"
+- path: helmfile/apps/nginx/helmfile.yaml
 
 environments:
   default:
     values:
-      - "environments/default/*.yaml"
+      - "helmfile/environments/default/*.yaml"
