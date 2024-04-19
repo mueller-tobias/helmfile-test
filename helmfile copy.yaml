@@ -1,0 +1,3 @@
+
+helmfiles:
+  - path: git::https://gitlab.opencode.de/bmi/opendesk/deployment/opendesk.git@helmfile.yaml
