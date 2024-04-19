@@ -1,3 +1,8 @@
 
 helmfiles:
   - path: git::https://github.com/mueller-tobias/helmfile-test.git@remote-helmfile/helmfile.yaml
+
+environments:
+  default:
+    values:
+      - "environments/default/values.yaml"

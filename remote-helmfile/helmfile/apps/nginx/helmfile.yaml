@@ -12,4 +12,6 @@ releases:
     labels:
       job: dbmigrator
     chart: bitnami/nginx
+    values:
+      - nginx.yaml.gotmpl
     # DB host, port, and connection opts for the environment
