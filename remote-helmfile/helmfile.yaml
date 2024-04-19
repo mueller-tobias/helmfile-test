@@ -10,4 +10,4 @@ releases:
     chart: bitnami/nginx
     # DB host, port, and connection opts for the environment
     values:
-    - "deploy/environments/dev/values.yaml"
+    - "/remote-helmfile/deploy/environments/dev/values.yaml"
