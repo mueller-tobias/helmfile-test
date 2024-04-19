@@ -2,4 +2,4 @@ environments:
   default:
     values:
       - "../../environments/default/*.yaml"
-      - - {{ toYaml .Values | nindent 10 }}
+      - {{ toYaml .Values | nindent 10 }}
